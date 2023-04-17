@@ -1,0 +1,149 @@
+@use '../scss' as *;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: $lexe;
+  background-color: $very-light-gray;
+  @include colCenter;
+
+  @include onDesktop {
+    height: 100vh;
+  }
+
+  @include onMobile {
+    margin: 5.5rem 1rem 5.5rem 0;
+  }
+
+}
+
+.component {
+
+  @include onDesktop {
+    width: 920px;
+    height: 500px;
+    display: flex;
+  }
+
+  @include onMobile {
+    width: 330px;
+    height: 1320px;
+  }
+
+  &-car {
+
+    &__icon {
+      margin-bottom: 2rem;
+    }
+
+    &__title {
+      color: $very-light-gray;
+      font-family: $big;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__text {
+      color: $transparent-white;
+      line-height: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+
+    &__button {
+      a {
+        text-decoration: none;
+        background-color: $very-light-gray;
+        padding: 1rem 2rem;
+        border-radius: 40px;
+        border: 2px solid $very-light-gray;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    @include onDesktop {
+      width: 33%;
+      padding: 3rem;
+
+      &__text {
+        margin-bottom: 5.5rem;
+      }
+    }
+
+    @include onMobile {
+      height: 33%;
+      padding: 3rem 3rem 25rem 3rem;
+
+      &__text {
+        width: 97%;
+        margin-bottom: 2.5rem;
+      }
+
+      &__button {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  &-car:nth-child(1) {
+    background-color: $bright-orange;
+
+    a {
+      color: $bright-orange;
+
+      &:hover {
+        color: $very-light-gray;
+      }
+    }
+
+    @include onDesktop {
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    @include onMobile {
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+  }
+
+  &-car:nth-child(2) {
+    background-color: $dark-cyan;
+
+    a {
+      color: $dark-cyan;
+
+      &:hover {
+        color: $very-light-gray;
+      }
+    }
+  }
+
+  &-car:nth-child(3) {
+    background-color: $very-dark-cyan;
+
+    a {
+      color: $very-dark-cyan;
+
+      &:hover {
+        color: $very-light-gray;
+      }
+    }
+
+    @include onDesktop {
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    @include onMobile {
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+  }
+}

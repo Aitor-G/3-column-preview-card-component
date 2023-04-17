@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 940px) {
+  body {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 940px) {
+  body {
+    margin: 5.5rem 1rem 5.5rem 0;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .component {
+    width: 920px;
+    height: 500px;
+    display: flex;
+  }
+}
+@media screen and (max-width: 940px) {
+  .component {
+    width: 330px;
+    height: 1320px;
+  }
+}
+.component-car__icon {
+  margin-bottom: 2rem;
+}
+.component-car__title {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.component-car__text {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+.component-car__button a {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.component-car__button a:hover {
+  background-color: transparent;
+}
+@media screen and (min-width: 940px) {
+  .component-car {
+    width: 33%;
+    padding: 3rem;
+  }
+  .component-car__text {
+    margin-bottom: 5.5rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .component-car {
+    height: 33%;
+    padding: 3rem 3rem 25rem 3rem;
+  }
+  .component-car__text {
+    width: 97%;
+    margin-bottom: 2.5rem;
+  }
+  .component-car__button {
+    margin-bottom: 5rem;
+  }
+}
+.component-car:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+.component-car:nth-child(1) a {
+  color: hsl(31, 77%, 52%);
+}
+.component-car:nth-child(1) a:hover {
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 940px) {
+  .component-car:nth-child(1) {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .component-car:nth-child(1) {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+.component-car:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.component-car:nth-child(2) a {
+  color: hsl(184, 100%, 22%);
+}
+.component-car:nth-child(2) a:hover {
+  color: hsl(0, 0%, 95%);
+}
+.component-car:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+.component-car:nth-child(3) a {
+  color: hsl(179, 100%, 13%);
+}
+.component-car:nth-child(3) a:hover {
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 940px) {
+  .component-car:nth-child(3) {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+@media screen and (max-width: 940px) {
+  .component-car:nth-child(3) {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
